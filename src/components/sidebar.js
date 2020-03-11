@@ -1,5 +1,5 @@
 import React from "react"
-import { Col, Button } from "react-bootstrap"
+import { Col } from "react-bootstrap"
 import {
   faLinkedin,
   faGithub,
@@ -8,8 +8,6 @@ import {
 
 import Image from "./image"
 import SocialItem from "./social-item"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
 
 const Sidebar = () => (
   <Col
@@ -19,11 +17,11 @@ const Sidebar = () => (
       backgroundColor: "#f7f7f7",
     }}
   >
-    <div className="d-flex p-5" style={{ height: "100%" }}>
+    <div className="d-flex align-items-center align-items-md-start p-5" style={{ height: "100%" }}>
       <div>
         <Image className="shadow" />
         <div className="mt-4">
-          <h1 style={{ fontWeight: '700' }}>Tom Hallam</h1>
+          <h1 style={{ fontWeight: "700" }}>Tom Hallam</h1>
           <p className="lead">
             Software Architect, Full Stack Engineer & CI/CD Advocate
           </p>
@@ -48,7 +46,15 @@ const Sidebar = () => (
         </div>
         <div className="d-block d-md-none">
           <hr />
-          <a href="#about" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingTop: '20px' }}>
+          <a
+            href="#about"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              paddingTop: "20px",
+            }}
+          >
             <div class="arrow">
               <span></span>
               <span></span>

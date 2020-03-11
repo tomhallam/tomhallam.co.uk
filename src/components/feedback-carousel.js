@@ -1,15 +1,18 @@
 import React from "react"
-import { CardDeck, Card, Row, Col } from "react-bootstrap"
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import { Row, Col } from "react-bootstrap"
+import Carousel from "@brainhubeu/react-carousel"
+
 import "@brainhubeu/react-carousel/lib/style.css"
 
-export default ({ feedback }) => (
+import feedback from "../data/feedback.json"
+
+export default () => (
   <Carousel autoPlay={5000} animationSpeed={1000} infinite>
     {feedback.map(feedback => (
-      <div style={{ width: "100vw" }}>
+      <div style={{ }}>
         <div className="p-5">
           <Row>
-            <Col xs={3} md={2}>
+            <Col className="d-none d-md-block" md={2}>
               <img
                 src={feedback.whoImage}
                 alt={feedback.who}

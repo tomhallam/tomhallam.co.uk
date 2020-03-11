@@ -1,119 +1,70 @@
 import React from "react"
-import { CardDeck, Card, Row, Col } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faCode,
-  faGlasses,
-  faMountain,
-  faGlobeEurope,
-  faPeopleCarry,
-  faServer,
-  faNetworkWired,
-} from "@fortawesome/free-solid-svg-icons"
-import { faAppStore } from "@fortawesome/free-brands-svg-icons"
 import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import SkillsCardDeck from "../components/skills-card-deck"
+import { Form, Button } from "react-bootstrap"
 
-const feedback = [{
-  quote: 'Tom’s passion for not only technology, but also the way the team was working and interacted with other teams was great to see',
-  who: 'Andy Nesling, Cloud Software Manager at Dyson',
-  whoImage: 'https://media-exp1.licdn.com/dms/image/C5603AQEBtx_JGBJgZg/profile-displayphoto-shrink_800_800/0?e=1588204800&v=beta&t=emnxvaCWfAJnVBfoXtIlcsybJs61w2VZK74isn0APKs'
-}, {
-  quote: 'Tom was a pleasure to work with and full of energy and passion in solving problems',
-  who: 'Mike Crooks, Head of Innovation at Mubaloo',
-  whoImage: 'https://media-exp1.licdn.com/dms/image/C4E03AQFd7T332HhSkQ/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=s135eQWKoaYeEgl_XjlfmOb-J1JeXIjUXDTxnTFTulU'
-}]
-
-const skills = [
-  {
-    icon: faCode,
-    title: "Code Reviews & Code Quality",
-    body: "blah",
-  },
-  {
-    icon: faGlasses,
-    title: "Cloud Architecture",
-    body: "blah",
-  },
-  {
-    icon: faMountain,
-    title: "Full Stack Engineering",
-    body: "blah",
-  },
-  {
-    icon: faAppStore,
-    title: "React Native App Development",
-    body: "blah",
-  },
-  {
-    icon: faGlobeEurope,
-    title: "Frontend Engineering",
-    body: "blah",
-  },
-  {
-    icon: faServer,
-    title: "CI/CD",
-    body: "blah",
-  },
-  {
-    icon: faNetworkWired,
-    title: "DevOps",
-    body: "blah",
-  },
-  {
-    icon: faPeopleCarry,
-    title: "Engineering Management",
-    body: "blah",
-  },
-]
-
-const LoadableFeedbackCarousel = Loadable(() => import('../components/feedback-carousel'));
+const LoadableFeedbackCarousel = Loadable(() =>
+  import("../components/feedback-carousel")
+)
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section className="m-5">
+    <section className="m-4 m-lg-5">
       <a name="about"></a>
       <h2>About me</h2>
       <p className="lead" style={{ fontSize: "24px" }}>
         I am an experienced cloud software architect and full stack engineer. I
         design, build and run concise software systems with an emphasis on
-        maintainability and usability. I love to evangelise continuous delivery
+        maintainability and usability. I evangelise continuous delivery
         practices, lean architecture and open source software.
       </p>
     </section>
 
-    <section className="m-5">
-      <h2>Skills</h2>
-      <p className="lead">
-        I can assist you and your business in a multitude of ways:
-      </p>
-      <CardDeck>
-        {skills
-          .sort((a, b) => (a.title > b.title ? 1 : -1))
-          .map((skill, i) => (
-            <>
-              <Card>
-                <Card.Body className="d-flex align-items-center">
-                  <FontAwesomeIcon
-                    icon={skill.icon}
-                    size={"2x"}
-                    className="mr-2"
-                  />
-                  <Card.Title style={{ margin: 0 }}>{skill.title}</Card.Title>
-                </Card.Body>
-              </Card>
-              {i % 2 === 1 && <div class="w-100 my-2 d-none d-md-block"></div>}
-            </>
-          ))}
-      </CardDeck>
+    <hr className="dotted" />
+
+    <section className="m-4 m-lg-5">
+    <a name="services"></a>
+      <h2 className="mb-4">Services</h2>
+      <SkillsCardDeck />
     </section>
 
+    <hr className="dotted" />
+
     <section>
+    <a name="feedback"></a>
       <h2 className="mx-5">Feedback</h2>
-      <LoadableFeedbackCarousel feedback={feedback} />
+      <LoadableFeedbackCarousel />
+    </section>
+
+    <hr className="dotted" />
+
+    <section className="m-4 m-lg-5">
+    <a name="contact"></a>
+      <h2 className="mb-4">Contact Me</h2>
+      <p className="lead">Keen to know more? Have a project that you think I can help with? I'm always happy to chat! Feel free to contact me using the form below:</p>
+      <Form method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicSubject">
+          <Form.Label>Subject</Form.Label>
+          <Form.Control type="text" placeholder="Enter Subject" />
+        </Form.Group>
+        <Form.Group controlId="formBasicContent">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows="3" placeholder="Enter your message" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Send
+        </Button>
+      </Form>
     </section>
   </Layout>
 )

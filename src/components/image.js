@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = (props) => {
+const Image = props => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "tom.jpg" }) {
@@ -26,7 +26,14 @@ const Image = (props) => {
     }
   `)
 
-  return <Img {...props} alt={'Picture of Tom Hallam'} className="rounded-circle shadow" fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      {...props}
+      alt={"Picture of Tom Hallam"}
+      className="rounded-circle shadow"
+      fluid={data.placeholderImage.childImageSharp.fluid}
+    />
+  )
 }
 
 export default Image

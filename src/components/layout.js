@@ -16,27 +16,24 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
-    <>
+    <div className="container-fluid">
       <Row>
         <Col md={4} lg={3}>
           <Sidebar />
         </Col>
-        <Col md={8} lg={9}>
+        <Col className="main-wrapper" md={8} lg={9}>
           <main>{children}</main>
+          <hr className="dotted" />
+          <footer className="m-5">
+            © Tom Hallam {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
         </Col>
       </Row>
-    </>
+    </div>
   )
 }
 
