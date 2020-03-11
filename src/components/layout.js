@@ -29,10 +29,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Row>
-        <Col md={4} lg={4}>
+        <Col md={4} lg={3}>
           <Sidebar />
         </Col>
-        <Col md={8} lg={8}>
+        <Col md={8} lg={9}>
           <main>{children}</main>
         </Col>
       </Row>

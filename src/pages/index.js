@@ -11,9 +11,7 @@ import {
   faNetworkWired,
 } from "@fortawesome/free-solid-svg-icons"
 import { faAppStore } from "@fortawesome/free-brands-svg-icons"
-
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
-import "@brainhubeu/react-carousel/lib/style.css"
+import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -71,6 +69,8 @@ const skills = [
   },
 ]
 
+const LoadableFeedbackCarousel = Loadable(() => import('../components/feedback-carousel'));
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -113,37 +113,7 @@ const IndexPage = () => (
 
     <section>
       <h2 className="mx-5">Feedback</h2>
-      
-      <Carousel autoPlay={5000} animationSpeed={1000} infinite>
-        {feedback.map(feedback => (
-          <div style={{ width: "100vw" }}>
-            <div className="p-5">
-              <Row>
-                <Col xs={3}>
-                  <img src={feedback.whoImage} alt={feedback.who} className="img-fluid rounded" />
-                </Col>
-                <Col>
-                  <blockquote
-                    className="blockquote"
-                    style={{
-                      background: "#f7f7f7",
-                      borderRadius: "25px",
-                      padding: "25px",
-                    }}
-                  >
-                    <p className="mb-0">
-                      "{feedback.quote}"
-                    </p>
-                    <footer className="blockquote-footer mt-2">
-                      {feedback.who}
-                    </footer>
-                  </blockquote>
-                </Col>
-              </Row>
-            </div>
-          </div>
-        ))}
-      </Carousel>
+      <LoadableFeedbackCarousel feedback={feedback} />
     </section>
   </Layout>
 )
