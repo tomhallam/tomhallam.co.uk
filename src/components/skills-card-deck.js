@@ -3,14 +3,8 @@ import { CardDeck, Card, Modal, Button, Row, Col } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCode,
-  faGlasses,
   faMountain,
-  faGlobeEurope,
-  faPeopleCarry,
   faServer,
-  faNetworkWired,
-  faVoicemail,
-  faNode,
   faComment,
   faRobot,
   faFire,
@@ -103,9 +97,6 @@ function SkillModal(props) {
             </Col>
           </Row>
         </Modal.Body>
-        {/* <Modal.Footer>
-          <Button variant={'danger'} onClick={props.onHide}>Close</Button>
-        </Modal.Footer> */}
       </Modal>
     </div>
   )
