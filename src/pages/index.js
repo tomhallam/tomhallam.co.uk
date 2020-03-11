@@ -64,7 +64,6 @@ const skills = [
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="d-none d-md-block" style={{ height: "10vh" }} />
     <section className="m-5">
       <a name="about"></a>
       <h2>About me</h2>

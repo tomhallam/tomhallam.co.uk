@@ -13,7 +13,7 @@ import { Row, Col } from "react-bootstrap"
 import Sidebar from "./sidebar"
 
 import "bootstrap/dist/css/bootstrap.min.css"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
