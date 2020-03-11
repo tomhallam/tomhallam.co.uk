@@ -10,7 +10,6 @@ import {
   faFire,
 } from "@fortawesome/free-solid-svg-icons"
 import {
-  faAppStore,
   faNodeJs,
   faReact,
 } from "@fortawesome/free-brands-svg-icons"
@@ -90,10 +89,6 @@ function SkillModal(props) {
             </Col>
             <Col>
               <div style={{ whiteSpace: "pre-line" }}>{props.body}</div>
-              <Button className="mt-4" onClick={props.onHide} href="#contact">
-                <FontAwesomeIcon icon={faComment} className="mr-2" />
-                Let's talk about {props.title}
-              </Button>
             </Col>
           </Row>
         </Modal.Body>
