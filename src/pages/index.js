@@ -49,7 +49,7 @@ const IndexPage = () => (
         Keen to know more? Have a project that you think I can help with? I'm
         always happy to chat! Feel free to contact me using the form below:
       </p>
-      <Form method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
