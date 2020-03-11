@@ -9,10 +9,7 @@ import {
   faRobot,
   faFire,
 } from "@fortawesome/free-solid-svg-icons"
-import {
-  faNodeJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons"
+import { faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons"
 
 // TODO: Refactor this into a static JSON file, need to find a way to reference the FA icons
 const skills = [

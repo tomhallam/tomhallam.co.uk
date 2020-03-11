@@ -22,8 +22,8 @@ module.exports = {
         name: `Tom Hallam`,
         short_name: `Tom Hallam`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#E8491E`,
+        theme_color: `#E8491E`,
         display: `minimal-ui`,
         icon: `src/images/tom.jpg`, // This path is relative to the root of the site.
       },
@@ -40,6 +40,12 @@ module.exports = {
             variants: [`400`, `700`],
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-69253367-15",
       },
     },
   ],
