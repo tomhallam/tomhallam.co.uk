@@ -53,12 +53,12 @@ const IndexPage = () => (
         <input type="hidden" name="form-name" value="contact" />
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control type="email" placeholder="Enter email" required />
         </Form.Group>
 
         <Form.Group controlId="formBasicSubject">
           <Form.Label>Subject</Form.Label>
-          <Form.Control type="text" placeholder="Enter Subject" />
+          <Form.Control type="text" placeholder="Enter Subject" required />
         </Form.Group>
         <Form.Group controlId="formBasicContent">
           <Form.Label>Message</Form.Label>
@@ -66,6 +66,7 @@ const IndexPage = () => (
             as="textarea"
             rows="3"
             placeholder="Enter your message"
+            required
           />
         </Form.Group>
         <Button variant="primary" type="submit">
