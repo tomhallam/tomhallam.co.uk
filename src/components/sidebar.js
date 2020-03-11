@@ -32,7 +32,7 @@ const Sidebar = () => (
             <SocialItem
               icon={faTwitter}
               name="Twitter"
-              link={"https://linkedin.com/in/tomhallam"}
+              link={"https://twitter.com/tomhallam"}
             />
             <SocialItem
               icon={faLinkedin}
@@ -42,7 +42,7 @@ const Sidebar = () => (
             <SocialItem
               icon={faGithub}
               name="GitHub"
-              link={"https://linkedin.com/in/tomhallam"}
+              link={"https://github.com/tomhallam"}
             />
           </div>
         </div>

@@ -826,6 +826,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@brainhubeu/react-carousel@^1.12.20":
+  version "1.12.20"
+  resolved "https://registry.yarnpkg.com/@brainhubeu/react-carousel/-/react-carousel-1.12.20.tgz#cd811e65d0524e908a3463cdbf46c65a9416ad97"
+  integrity sha512-LURXV+O3T8Q2pN2Z9rLYr+mLE0Yp0BrJQgnqmCuZ2+vAP0Cn/FU+3WM9IKTgtf711GjAqlvVvOxswhdGIsHcYg==
+
 "@fortawesome/fontawesome-common-types@^0.2.27":
   version "0.2.27"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.27.tgz#19706345859fc46adf3684ed01d11b40903b87e9"

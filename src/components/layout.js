@@ -29,7 +29,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Row>
-        <Sidebar />
+        <Col md={4} lg={4}>
+          <Sidebar />
+        </Col>
         <Col md={8} lg={8}>
           <main>{children}</main>
         </Col>
