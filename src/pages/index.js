@@ -27,7 +27,7 @@ const IndexPage = () => (
     <hr className="dotted" />
 
     <section className="m-4 m-lg-5">
-    <a name="services"></a>
+      <a name="services"></a>
       <h2 className="mb-4">Services</h2>
       <SkillsCardDeck />
     </section>
@@ -35,7 +35,7 @@ const IndexPage = () => (
     <hr className="dotted" />
 
     <section>
-    <a name="feedback"></a>
+      <a name="feedback"></a>
       <h2 className="mx-5">Feedback</h2>
       <LoadableFeedbackCarousel />
     </section>
@@ -43,9 +43,12 @@ const IndexPage = () => (
     <hr className="dotted" />
 
     <section className="m-4 m-lg-5">
-    <a name="contact"></a>
+      <a name="contact"></a>
       <h2 className="mb-4">Contact Me</h2>
-      <p className="lead">Keen to know more? Have a project that you think I can help with? I'm always happy to chat! Feel free to contact me using the form below:</p>
+      <p className="lead">
+        Keen to know more? Have a project that you think I can help with? I'm
+        always happy to chat! Feel free to contact me using the form below:
+      </p>
       <Form method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact" />
         <Form.Group controlId="formBasicEmail">
@@ -59,7 +62,11 @@ const IndexPage = () => (
         </Form.Group>
         <Form.Group controlId="formBasicContent">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows="3" placeholder="Enter your message" />
+          <Form.Control
+            as="textarea"
+            rows="3"
+            placeholder="Enter your message"
+          />
         </Form.Group>
         <Button variant="primary" type="submit">
           Send

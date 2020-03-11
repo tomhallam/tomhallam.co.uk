@@ -9,7 +9,7 @@ import feedback from "../data/feedback.json"
 export default () => (
   <Carousel autoPlay={5000} animationSpeed={1000} infinite>
     {feedback.map(feedback => (
-      <div style={{ }}>
+      <div style={{}}>
         <div className="p-5">
           <Row>
             <Col className="d-none d-md-block" md={2}>

@@ -15,7 +15,11 @@ import {
   faRobot,
   faFire,
 } from "@fortawesome/free-solid-svg-icons"
-import { faAppStore, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons"
+import {
+  faAppStore,
+  faNodeJs,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons"
 
 // TODO: Refactor this into a static JSON file, need to find a way to reference the FA icons
 const skills = [
@@ -33,17 +37,20 @@ const skills = [
   {
     icon: faMountain,
     title: "Full Stack Engineering",
-    body: "I can work effectively at all levels of the 'stack', from backend architecture and engineering all the way through to frontend engineering with React and application development with React Native.\n\nI am comfortable working onsite or remotely to produce solutions at any complexity level.",
+    body:
+      "I can work effectively at all levels of the 'stack', from backend architecture and engineering all the way through to frontend engineering with React and application development with React Native.\n\nI am comfortable working onsite or remotely to produce solutions at any complexity level.",
   },
   {
     icon: faReact,
     title: "React Native App Development",
-    body: "React Native is a technology developed by Facebook which allows developers to create mobile apps quickly and efficiently, targetting iOS, Android and now even the Web.\n\nI have developed several popular apps using this methodology and have an efficient way of working with it.",
+    body:
+      "React Native is a technology developed by Facebook which allows developers to create mobile apps quickly and efficiently, targetting iOS, Android and now even the Web.\n\nI have developed several popular apps using this methodology and have an efficient way of working with it.",
   },
   {
     icon: faComment,
     title: "Technical Writing & Documentation",
-    body: "I can assist your teams to write documentation and technical documents in a way that engages the reader and allows them to learn about the solution rather than getting bogged down in technical jargon or 'developer speak'.",
+    body:
+      "I can assist your teams to write documentation and technical documents in a way that engages the reader and allows them to learn about the solution rather than getting bogged down in technical jargon or 'developer speak'.",
   },
   {
     icon: faServer,
@@ -53,13 +60,15 @@ const skills = [
   {
     icon: faFire,
     title: "Rapid Prototyping",
-    body: "I am able to produce well polished, performant prototypes quickly. This could help you with proof of concepts (POC), minimum viable products (MVP) or other business initiatives.\n\nI can offer this service for web applications, mobile applications or IoT applications using Raspberry Pi or Ardunio hardware platforms.",
+    body:
+      "I am able to produce well polished, performant prototypes quickly. This could help you with proof of concepts (POC), minimum viable products (MVP) or other business initiatives.\n\nI can offer this service for web applications, mobile applications or IoT applications using Raspberry Pi or Ardunio hardware platforms.",
   },
   {
     icon: faRobot,
     title: "IoT Consultancy",
-    body: "The Internet of Things, or IoT, is a way to describe the fleet of smart things that are being rapidly connected to the internet. These things could be something as simple as a smart lightbulb all the way to industrial applications like power generation or water network management. I have proven experience in this field, architecting and leading a team that allowed Dyson's connected platform to suppass it's millionth connected machine.\n\nI am able to work with you to produce secure, performant and scalable systems that will allow you to unlock the full potential of the IoT age."
-  }
+    body:
+      "The Internet of Things, or IoT, is a way to describe the fleet of smart things that are being rapidly connected to the internet. These things could be something as simple as a smart lightbulb all the way to industrial applications like power generation or water network management. I have proven experience in this field, architecting and leading a team that allowed Dyson's connected platform to suppass it's millionth connected machine.\n\nI am able to work with you to produce secure, performant and scalable systems that will allow you to unlock the full potential of the IoT age.",
+  },
 ]
 
 function SkillModal(props) {

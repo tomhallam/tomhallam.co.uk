@@ -17,7 +17,10 @@ const Sidebar = () => (
       backgroundColor: "#f7f7f7",
     }}
   >
-    <div className="d-flex align-items-center align-items-md-start p-5" style={{ height: "100%" }}>
+    <div
+      className="d-flex align-items-center align-items-md-start p-5"
+      style={{ height: "100%" }}
+    >
       <div>
         <Image className="shadow" />
         <div className="mt-4">

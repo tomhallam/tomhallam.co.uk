@@ -16,7 +16,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
-
   return (
     <div className="container-fluid">
       <Row>
