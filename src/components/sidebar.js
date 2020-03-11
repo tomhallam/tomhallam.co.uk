@@ -11,7 +11,7 @@ import SocialItem from "./social-item"
 
 const Sidebar = () => (
   <Col
-    className="d-fixed text-center align-items-center sidebar"
+    className="d-fixed text-center align-items-center sidebar no-gutters"
     style={{
       height: "100vh",
       backgroundColor: "#f7f7f7",

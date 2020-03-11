@@ -12,7 +12,7 @@ export default () => (
       <div style={{}}>
         <div className="p-5">
           <Row>
-            <Col className="d-none d-md-block" md={2}>
+            <Col className="d-none d-lg-block" md={2}>
               <img
                 src={feedback.whoImage}
                 alt={feedback.who}

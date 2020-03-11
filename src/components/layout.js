@@ -18,14 +18,14 @@ import "./layout.scss"
 const Layout = ({ children }) => {
   return (
     <div className="container-fluid">
-      <Row>
+      <Row className="row-no-padding">
         <Col md={4} lg={3}>
           <Sidebar />
         </Col>
         <Col className="main-wrapper" md={8} lg={9}>
           <main>{children}</main>
           <hr className="dotted" />
-          <footer className="m-5">
+          <footer className="m-5 text-center">
             © Tom Hallam {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
