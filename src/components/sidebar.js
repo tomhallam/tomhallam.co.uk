@@ -4,6 +4,7 @@ import {
   faLinkedin,
   faGithub,
   faTwitter,
+  fa500px,
 } from "@fortawesome/free-brands-svg-icons"
 
 import Image from "./image"
@@ -18,18 +19,20 @@ const Sidebar = () => (
     }}
   >
     <div
-      className="d-flex align-items-center align-items-md-start p-5"
+      className="d-flex align-items-center align-items-md-start p-5 p-md-3"
       style={{ height: "100%" }}
     >
       <div>
         <Image className="shadow" />
         <div className="mt-4">
-          <h1 style={{ fontWeight: "700" }}>Tom Hallam</h1>
-          <p className="lead">
-            Software Architect, Full Stack Engineer & CI/CD Advocate
-          </p>
-          <div className="d-none d-md-block">
-            <hr />
+          <div>
+            <h1 style={{ fontWeight: "700" }}>Tom Hallam</h1>
+            <p className="lead">
+              Software Architect, Full Stack Engineer & CI/CD Advocate
+            </p>
+          </div>
+          <hr className="d-none d-md-flex" />
+          <div className="d-none d-md-flex justify-content-between">
             <SocialItem
               icon={faTwitter}
               name="Twitter"
@@ -45,10 +48,14 @@ const Sidebar = () => (
               name="GitHub"
               link={"https://github.com/tomhallam"}
             />
+            <SocialItem
+              icon={fa500px}
+              name="500px"
+              link={"https://500px.com/freshnode"}
+            />
           </div>
         </div>
         <div className="d-block d-md-none">
-          <hr />
           <a
             href="#about"
             style={{

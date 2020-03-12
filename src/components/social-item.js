@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Button } from "react-bootstrap"
 
 export default ({ icon, name, link }) => (
-  <div className="my-2">
-    <Button block variant={"outline-secondary"} href={link}>
-      <FontAwesomeIcon className="mr-2" icon={icon} size={"sm"} />
-      {name}
+
+    <Button variant={"outline-secondary"} href={link} className="btn-circle" size={'lg'}>
+      <FontAwesomeIcon icon={icon} size={"2x"} />
     </Button>
-  </div>
+
 )
