@@ -35,7 +35,7 @@ async function createCategory(name, { actions, graphql }, options = null) {
   }
 
   if (options && !options.createPages) {
-    console.log('Not creating pages for', name)
+    console.log("Not creating pages for", name)
     return
   }
 
