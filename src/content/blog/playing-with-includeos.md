@@ -3,21 +3,21 @@ title: "Playing around with IncludeOS"
 date: "2020-03-13"
 ---
 
-I was recently made aware of IncludeOS, a cool project that allows developers to
-embed a tiny operating system into their applications, allowing them to be run
-without any interaction with a classic operating system like Linux or Windows.
+I was recently stumbled across IncludeOS, a cool project that allows developers
+to embed a tiny operating system into their applications, allowing them to be
+run without any interaction with a classic operating system like Linux or
+Windows.
 
 This is exciting as it allows the application to be run with the absolute bare
 minimum dependencies, ensuring a lightweight distributable image. According to
 the creators, applications can be booted in tens of milliseconds, and have a low
-memory footprint, which makes sense given the goals of the project. This puts
-this project in the same arena as AWS Lambda and other Function as a Service
-(FaaS) providers.
+memory footprint. This puts this project in the same arena as AWS Lambda and
+other Function as a Service (FaaS) providers.
 
 It takes a little bit of setting up, but I found my experience was made a fair
 bit easier with [Multipass from Ubuntu](https://multipass.run/). Using this
-tool, I created an Ubuntu VM on my Mac and set up all of the dependencies within
-it.
+tool, I created a light Ubuntu VM on my Mac and set up all of the dependencies
+within it.
 
 ```bash{promptUser: tom}{promptHost: multipass}
 apt-get install python3-pip python3-dev git cmake clang-6.0 gcc nasm make qemu
@@ -48,17 +48,17 @@ stuff, but importantly:
 [...]
 ```
 
-How cool is that? We downloaded and installed the compile dependencies, and
-within five minutes we had our own operating system running locally. The team at IncludeOS have
-also written a really neat tutorial on how to get the net-enabled examples
+How cool is that? I downloaded and installed the dependencies, and within five
+minutes I had my own operating system running locally. The team at IncludeOS
+have also written a really neat tutorial on how to get the net-enabled examples
 running on Google Compute Engine.
 [Check it out here](https://www.includeos.org/blog/2017/includeos-on-google-compute-engine.html).
 
 When I was playing, I tried to use my newly compiled (and GRUB-loaded) images on
-DigitalOcean through their images functionality. Even though I managed to get
-the image converted to a VMDK (VirtualBox disk image), and could get a Droplet
-to launch, I could not get the IP to respond with the application. More digging
-required I think!
+DigitalOcean through their Custom Image functionality. Even though I managed to
+get the image converted to a VMDK (VirtualBox disk image), and could get a
+Droplet to launch, I could not get the IP to respond with the application. More
+digging required I think!
 
 I will be following the development of this project closely. It would be super
-cool to try and write a community FaaS platform based around this technology! :)
+cool to try and write a toy FaaS platform based around this technology! :)
