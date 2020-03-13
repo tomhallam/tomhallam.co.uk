@@ -4,6 +4,7 @@ import { Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BlogPostList from "../components/blog-post-list"
 
 export default ({ data }) => {
   return (
@@ -17,6 +18,7 @@ export default ({ data }) => {
           <h1 className="mb-4" style={{ fontWeight: 700 }}>
             Blog Archive
           </h1>
+          <BlogPostList />
         </div>
       </Col>
     </Layout>
