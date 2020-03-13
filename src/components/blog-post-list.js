@@ -11,9 +11,7 @@ function BlogItem({ node }) {
     <Row className="mb-4">
       <Col style={{ fontSize: 18 }}>
         <span className="text-muted mr-5 d-block d-md-inline">{date}</span>
-        <Link to={slug}>
-          {title}
-        </Link>
+        <Link to={slug}>{title}</Link>
       </Col>
     </Row>
   )

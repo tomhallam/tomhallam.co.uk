@@ -97,9 +97,6 @@ const Layout = ({
                   </div>
                 </Link>
               </div>
-              {/* <div className="px-4 py-2" style={{ backgroundColor: "#f7f7f7", borderTop: '1px solid #e7e7e7' }}>
-                <Button size={'sm'}><FontAwesomeIcon icon={faArrowLeft} className="mr-2" />Home</Button>
-              </div> */}
             </>
           )}
           <main>{children}</main>
@@ -107,7 +104,13 @@ const Layout = ({
           <footer className="m-5 text-center text-md-left">
             © Tom Hallam {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.gatsbyjs.org">Gatsby</a>{" "}
+            <span className="d-block d-md-inline mt-2 mt-md-0">
+              <span className="d-none d-md-inline"> - </span>
+              <a href="https://github.com/tomhallam/tomhallam.co.uk">
+                This site is Open Source!
+              </a>
+            </span>
           </footer>
         </Col>
       </Row>

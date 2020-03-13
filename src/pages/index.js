@@ -58,7 +58,6 @@ const IndexPage = () => (
         <h2 className="mx-5">Feedback</h2>
         <LoadableFeedbackCarousel />
       </section>
-
     </div>
   </Layout>
 )

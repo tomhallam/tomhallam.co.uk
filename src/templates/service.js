@@ -65,7 +65,6 @@ export default ({ data }) => {
 
           <h2 className="mb-4">Other Services</h2>
           <SkillsCardDeck currentSlug={post.fields.slug} limit={4} />
-
         </div>
       </Col>
     </Layout>
