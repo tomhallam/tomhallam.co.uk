@@ -3,9 +3,11 @@ module.exports = {
     title: `Tom Hallam`,
     description: `Tom is a Software Architect, Full Stack Engineer & CI/CD Advocate`,
     author: `@tomhallam`,
+    siteUrl: `https://tomhallam.co.uk`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
