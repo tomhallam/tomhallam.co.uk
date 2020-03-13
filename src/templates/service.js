@@ -28,7 +28,6 @@ export default ({ data }) => {
           <hr className="dotted" />
 
           <section>
-            <a name="contact"></a>
             <h2 className="mb-4">Let's talk</h2>
             <p className="lead">
               Keen to know more? I'm always happy to chat! Feel free to contact

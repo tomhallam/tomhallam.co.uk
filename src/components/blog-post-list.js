@@ -1,7 +1,6 @@
 import React from "react"
 import { Col, Row } from "react-bootstrap"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function BlogItem({ node }) {
   const { title, date } = node.frontmatter

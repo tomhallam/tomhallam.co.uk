@@ -1,5 +1,5 @@
+/* eslint jsx-a11y/anchor-has-content: "off", jsx-a11y/anchor-is-valid: "off"  */
 import React from "react"
-import { Form, Button } from "react-bootstrap"
 import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
@@ -30,32 +30,36 @@ const IndexPage = () => (
       <hr className="dotted" />
 
       <section className="m-4 m-lg-5">
-        <a name="services"></a>
-        <h2 className="mb-4">Services</h2>
+        <a name="services">
+          <h2 className="mb-4">Services</h2>
+        </a>
         <SkillsCardDeck />
       </section>
 
       <hr className="dotted" />
 
       <section className="m-4 m-lg-5">
-        <a name="services"></a>
-        <h2 className="mb-4">Companies I've worked with</h2>
+        <a name="companies">
+          <h2 className="mb-4">Companies I've worked with</h2>
+        </a>
         <ClientsCardDeck />
       </section>
 
       <hr className="dotted" />
 
       <section className="m-4 m-lg-5">
-        <a name="services"></a>
-        <h2 className="mb-4">Latest Blog Posts</h2>
+        <a name="blog">
+          <h2 className="mb-4">Latest Blog Posts</h2>
+        </a>
         <BlogPostList limit={5} />
       </section>
 
       <hr className="dotted" />
 
       <section>
-        <a name="feedback"></a>
-        <h2 className="mx-5">Feedback</h2>
+        <a name="feedback">
+          <h2 className="mx-5">Feedback</h2>
+        </a>
         <LoadableFeedbackCarousel />
       </section>
     </div>

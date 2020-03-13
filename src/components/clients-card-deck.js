@@ -1,12 +1,10 @@
 import React from "react"
 import { CardDeck, Card } from "react-bootstrap"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 function Company({ node }) {
-  const { title, icon, iconType, logo } = node.frontmatter
-  const { slug } = node.fields
+  const { title, logo } = node.frontmatter
 
   return (
     <Card>

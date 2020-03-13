@@ -7,7 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Row, Col, Breadcrumb, Button } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
+import { Link } from "gatsby"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {
@@ -21,23 +22,17 @@ import {
   faFire,
   faServer,
   faPen,
-  faArrowLeft,
-  faHome,
-  faAngleLeft,
   faMountain,
-  faCodeBranch,
   faCode,
   faCloud,
   faCalendar,
 } from "@fortawesome/free-solid-svg-icons"
 
 import Sidebar from "./sidebar"
+import Image from "./image"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.scss"
-import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Image from "./image"
 
 // Configure font awesome fonts for easy embedding from md files
 library.add(
@@ -55,12 +50,7 @@ library.add(
   faCalendar
 )
 
-const Layout = ({
-  children,
-  homepage = false,
-  section = null,
-  title = null,
-}) => {
+const Layout = ({ children, homepage = false }) => {
   return (
     <div className="container-fluid">
       <Row className="row-no-padding">
