@@ -30,8 +30,7 @@ export default ({ data }) => {
           <section>
             <h2 className="mb-4">Let's talk</h2>
             <p className="lead">
-              Keen to know more? I'm always happy to chat! Feel free to contact
-              me using the form below:
+              Keen to know more? Feel free to contact me using the form below:
             </p>
             <Form
               name="contact"

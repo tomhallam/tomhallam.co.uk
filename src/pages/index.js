@@ -20,10 +20,10 @@ const IndexPage = () => (
         <a name="about"></a>
         <h2>About me</h2>
         <p className="lead" style={{ fontSize: "24px" }}>
-          An experienced cloud software architect and full stack engineer. I
+          I'm an experienced cloud software architect and full stack engineer. I
           design, build and run concise software systems with an emphasis on
-          maintainability and usability. Continuous delivery and integration,
-          lean architecture and open source software are practices I evangelise.
+          maintainability and usability. I evangelise Continuous delivery and
+          integration, lean architecture and the use of open source software.
         </p>
       </section>
 
