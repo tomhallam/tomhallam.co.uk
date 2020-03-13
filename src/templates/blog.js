@@ -4,29 +4,30 @@ import { Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SkillsCardDeck from "../components/skills-card-deck"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
     <Layout title={post.frontmatter.title}>
-      <SEO title={post.frontmatter.title} />
-      <Col md={12} lg={9}>
+      <SEO title={`${post.frontmatter.title} | Blog`} />
+      <Col md={12} lg={10} className="code-container">
         <div className="m-4 m-md-5">
           <div className="lead text-muted mb-4">
-            <Link to="/">Home</Link> > Services
+            <Link to="/">Home</Link> > Blog
           </div>
           <h1 className="mb-4" style={{ fontWeight: 700 }}>
             {post.frontmatter.title}
           </h1>
+          <div className="mb-4">
+            <FontAwesomeIcon icon="calendar" className="mr-2" />{" "}
+            <span>{post.frontmatter.date}</span>
+          </div>
           <div
             dangerouslySetInnerHTML={{ __html: post.html }}
             style={{ fontSize: 18 }}
           />
-          <hr className="dotted my-5" />
-          <h2 className="mb-4">Other Services</h2>
-          <SkillsCardDeck currentSlug={post.fields.slug} limit={4} />
         </div>
       </Col>
     </Layout>
@@ -39,6 +40,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM Do, YYYY")
       }
       fields {
         slug

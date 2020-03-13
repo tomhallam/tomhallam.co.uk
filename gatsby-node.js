@@ -67,5 +67,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async context => {
   createCategory("service", context)
+  createCategory("blog", context)
   createCategory("company", context, { createPages: false })
 }

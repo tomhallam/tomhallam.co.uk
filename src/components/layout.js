@@ -28,6 +28,7 @@ import {
   faCodeBranch,
   faCode,
   faCloud,
+  faCalendar,
 } from "@fortawesome/free-solid-svg-icons"
 
 import Sidebar from "./sidebar"
@@ -50,7 +51,8 @@ library.add(
   faPen,
   faMountain,
   faCode,
-  faCloud
+  faCloud,
+  faCalendar
 )
 
 const Layout = ({

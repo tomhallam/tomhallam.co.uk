@@ -1,11 +1,12 @@
 import React from "react"
+import { Form, Button } from "react-bootstrap"
 import Loadable from "@loadable/component"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SkillsCardDeck from "../components/skills-card-deck"
-import { Form, Button } from "react-bootstrap"
 import ClientsCardDeck from "../components/clients-card-deck"
+import BlogPostList from "../components/blog-post-list"
 
 const LoadableFeedbackCarousel = Loadable(() =>
   import("../components/feedback-carousel")
@@ -40,6 +41,14 @@ const IndexPage = () => (
         <a name="services"></a>
         <h2 className="mb-4">Companies I've worked with</h2>
         <ClientsCardDeck />
+      </section>
+
+      <hr className="dotted" />
+
+      <section className="m-4 m-lg-5">
+        <a name="services"></a>
+        <h2 className="mb-4">Latest Blog Posts</h2>
+        <BlogPostList limit={5} />
       </section>
 
       <hr className="dotted" />
