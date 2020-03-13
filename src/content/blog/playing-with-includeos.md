@@ -3,10 +3,12 @@ title: "Playing around with IncludeOS"
 date: "2020-03-13"
 ---
 
-I was recently stumbled across IncludeOS, a cool project that allows developers
+I recently stumbled across IncludeOS, a cool project that allows developers
 to embed a tiny operating system into their applications, allowing them to be
 run without any interaction with a classic operating system like Linux or
 Windows.
+
+<!-- end -->
 
 This is exciting as it allows the application to be run with the absolute bare
 minimum dependencies, ensuring a lightweight distributable image. According to

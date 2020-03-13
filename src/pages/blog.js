@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogPostList from "../components/blog-post-list"
 
-export default ({ data }) => {
+export default () => {
   return (
     <Layout>
       <SEO title="Blog Archive" />
