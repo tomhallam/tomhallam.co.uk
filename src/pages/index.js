@@ -59,45 +59,6 @@ const IndexPage = () => (
         <LoadableFeedbackCarousel />
       </section>
 
-      <hr className="dotted" />
-
-      <section className="m-4 m-lg-5">
-        <a name="contact"></a>
-        <h2 className="mb-4">Contact Me</h2>
-        <p className="lead">
-          Keen to know more? I'm always happy to chat! Feel free to contact me
-          using the form below:
-        </p>
-        <Form
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" required />
-          </Form.Group>
-
-          <Form.Group controlId="formBasicSubject">
-            <Form.Label>Subject</Form.Label>
-            <Form.Control type="text" placeholder="Enter Subject" required />
-          </Form.Group>
-          <Form.Group controlId="formBasicContent">
-            <Form.Label>Message</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows="3"
-              placeholder="Enter your message"
-              required
-            />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Send
-          </Button>
-        </Form>
-      </section>
     </div>
   </Layout>
 )

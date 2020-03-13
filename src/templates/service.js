@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { Col } from "react-bootstrap"
+import { Col, Form, Button } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,9 +24,48 @@ export default ({ data }) => {
             dangerouslySetInnerHTML={{ __html: post.html }}
             style={{ fontSize: 18 }}
           />
+
+          <hr className="dotted" />
+
+          <section>
+            <a name="contact"></a>
+            <h2 className="mb-4">Let's talk</h2>
+            <p className="lead">
+              Keen to know more? I'm always happy to chat! Feel free to contact
+              me using the form below:
+            </p>
+            <Form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" required />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicContent">
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows="3"
+                  placeholder="Enter your message"
+                  required
+                />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Send
+              </Button>
+            </Form>
+          </section>
+
           <hr className="dotted my-5" />
+
           <h2 className="mb-4">Other Services</h2>
           <SkillsCardDeck currentSlug={post.fields.slug} limit={4} />
+
         </div>
       </Col>
     </Layout>

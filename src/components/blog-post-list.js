@@ -8,9 +8,9 @@ function BlogItem({ node }) {
   const { slug } = node.fields
 
   return (
-    <Row>
+    <Row className="mb-4">
       <Col style={{ fontSize: 18 }}>
-        <span className="text-muted mr-5">{date}</span>
+        <span className="text-muted mr-5 d-block d-md-inline">{date}</span>
         <Link to={slug}>
           {title}
         </Link>
