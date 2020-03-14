@@ -22,8 +22,8 @@ const IndexPage = () => (
         <p className="lead" style={{ fontSize: "24px" }}>
           I'm an experienced cloud software architect and full stack engineer. I
           design, build and run concise software systems with an emphasis on
-          maintainability and usability. I evangelise Continuous delivery and
-          integration, lean architecture and the use of open source software.
+          maintainability and usability. I evangelise continuous integration and
+          delivery, lean architecture and the use of open source software.
         </p>
       </section>
 
