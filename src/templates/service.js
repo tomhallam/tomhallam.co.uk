@@ -41,7 +41,12 @@ export default ({ data }) => {
               <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control name="email" type="email" placeholder="Enter email" required />
+                <Form.Control
+                  name="email"
+                  type="email"
+                  placeholder="Enter email"
+                  required
+                />
               </Form.Group>
 
               <Form.Group controlId="formBasicContent">

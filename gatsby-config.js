@@ -81,5 +81,11 @@ module.exports = {
         trackingId: "UA-69253367-15",
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-tomhallam-co-uk`,
+      },
+    },
   ],
 }

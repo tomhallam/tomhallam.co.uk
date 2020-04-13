@@ -7,9 +7,11 @@ function BlogItem({ node }) {
   const { slug } = node.fields
 
   return (
-    <Row className="mb-4">
-      <Col style={{ fontSize: 18 }}>
-        <span className="text-muted mr-5 d-block d-md-inline">{date}</span>
+    <Row className="m-0" style={{ fontSize: 18 }}>
+      <Col xs={12} md={4}>
+        <span className="text-muted">{date}</span>
+      </Col>
+      <Col xs={12} md={8}>
         <Link to={slug}>{title}</Link>
       </Col>
     </Row>
@@ -21,7 +23,7 @@ export default ({ limit = null }) => {
     query BlogPosts {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(blog)/.*.md$/" } }
-        sort: { fields: [frontmatter___title], order: [ASC] }
+        sort: { fields: [frontmatter___date], order: [DESC] }
       ) {
         edges {
           node {
