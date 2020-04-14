@@ -19,7 +19,7 @@ deployment.
 
 The resulting architecture looks like this:
 
-![Serverless E2E Architecture](./ServerlessE2E.png)
+![Serverless E2E Architecture](images/ServerlessE2E.png)
 
 One of the neat features of the Serverless framework is flexibility when it
 comes to dictating the invocation the function. For the E2E tests, I need to be
