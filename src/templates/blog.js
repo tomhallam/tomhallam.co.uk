@@ -24,7 +24,7 @@ export default ({ data }) => {
             {post.frontmatter.title}
           </h1>
           <div className="mb-4">
-            <FontAwesomeIcon icon="calendar" className="mr-2" />{" "}
+            <FontAwesomeIcon icon="calendar" className="mr-2" size={'1x'} />{" "}
             <span>{post.frontmatter.date}</span>
           </div>
           <div
