@@ -9,6 +9,12 @@ started!
 
 <!-- end -->
 
+<hr class="dotted">
+
+![Spot pricing](images/spot-pricing.png)
+
+<hr class="dotted">
+
 If you're not familiar with the concept of Spot Pricing in AWS, I'll try and explain. Spot was initially launched for EC2 instances way back in 2009. You specify your maxmimum "bid" for a given instance type in an availabilty zone, and if your bid is less than the "spot price", the request is fulfilled and you get your instances for a fraction of the sticker price.
 
 There is a catch, though. Spot instances can be terminated with only two minutes warning, making them unsuitable for stateful application servers or databases that may lead to downtime if terminated.
